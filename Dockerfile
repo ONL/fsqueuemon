@@ -1,6 +1,7 @@
 FROM python:latest
 
-RUN ls -l && pwd
+WORKDIR /root
+COPY ./* /root/
 RUN pip install -r requirements.txt
 RUN python setup.py install
 
