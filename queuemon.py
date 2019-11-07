@@ -26,6 +26,7 @@ from time import strftime
 from datetime import datetime
 import time
 from backends import CallcenterStatusBackend
+from i18n import _
 
 app = Flask(__name__)
 
