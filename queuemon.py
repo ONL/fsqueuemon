@@ -36,6 +36,13 @@ hide_agents = (
     'someagent@mydomain.example.com',
     )
 
+@babel.localeselector
+def get_locale():
+    # try to guess the language from the user accept
+    # header the browser transmits.  We support de/en. 
+    # The best match wins.
+    return request.accept_languages.best_match(['de', 'en'])
+
 @app.template_filter('tsformat')
 def filter_timestamp_format(timestamp):
     ts = datetime.fromtimestamp(int(timestamp))
