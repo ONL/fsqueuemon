@@ -26,7 +26,7 @@ from time import strftime
 from datetime import datetime
 import time
 from backends import CallcenterStatusBackend
-from i18n import _
+from flask.ext.babel import gettext, ngettext
 
 app = Flask(__name__)
 
@@ -41,13 +41,13 @@ def filter_timestamp_format(timestamp):
     ts = datetime.fromtimestamp(int(timestamp))
     delta = datetime.now() - ts
     if delta.days < 1:
-        ts = _("vor ")
+        ts = gettext("vor ")
         hours = delta.seconds / 3600.
         if hours < 1:
             minutes = delta.seconds % 3600 / 60
-            ts += _("{0:n} Min.").format(minutes)
+            ts += gettext(u'%(num)s Min.', num=minutes)
         else:
-            ts += _("{0:.1f} Stunden ").format(hours)
+            ts += ngettext(u'%(num).1f Stunde', u'%(num).1f Stunden', num=hours)
     return ts
 
 @app.template_filter('deltaformat')
@@ -58,8 +58,8 @@ def filter_timedelta_format(timestamp):
     seconds = delta % 60
     output = ""
     if minutes:
-        output += _("{0:n} Minuten").format(minutes)
-    output += _("{0:n} Sekunden").format(seconds)
+        output += ngettext(u'%(num).1f Minute', u'%(num).1f Minuten', num=minutes)
+    output += ngettext(u'%(num).1f Sekunde', u'%(num).1f Sekunden', num=seconds)
     return output
 
 @app.route('/raw')
