@@ -1,2 +1,3 @@
 Flask>=0.10.1
 Babel>=0.1
+Flask-Babel>=0.1
