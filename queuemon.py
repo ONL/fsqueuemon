@@ -26,7 +26,7 @@ from time import strftime
 from datetime import datetime
 import time
 from backends import CallcenterStatusBackend
-from flask.ext.babel import Babel, gettext, ngettext
+from flask_babel import Babel, gettext, ngettext
 
 app = Flask(__name__)
 app.config.from_pyfile('settings.cfg')
