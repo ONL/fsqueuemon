@@ -30,7 +30,7 @@ from flask_babel import Babel, gettext, ngettext
 
 app = Flask(__name__)
 app.config.from_pyfile('settings.cfg')
-babel = Babel(app)
+babel = Babel(app, BABEL_DEFAULT_LOCALE, BABEL_DEFAULT_TIMEZONE)
 
 backend = CallcenterStatusBackend
 
