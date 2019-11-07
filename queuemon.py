@@ -40,13 +40,13 @@ def filter_timestamp_format(timestamp):
     ts = datetime.fromtimestamp(int(timestamp))
     delta = datetime.now() - ts
     if delta.days < 1:
-        ts = "vor "
+        ts = _("vor ")
         hours = delta.seconds / 3600.
         if hours < 1:
             minutes = delta.seconds % 3600 / 60
-            ts += "%s Min." % minutes
+            ts += _("{0:n} Min.").format(minutes)
         else:
-            ts += "%.1f Stunden " % hours
+            ts += _("{0:.1f} Stunden ").format(hours)
     return ts
 
 @app.template_filter('deltaformat')
@@ -57,8 +57,8 @@ def filter_timedelta_format(timestamp):
     seconds = delta % 60
     output = ""
     if minutes:
-        output += "%s Minuten " % minutes
-    output += "%s Sekunden" % seconds
+        output += _("{0:n} Minuten").format(minutes)
+    output += _("{0:n} Sekunden").format(seconds)
     return output
 
 @app.route('/raw')
