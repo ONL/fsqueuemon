@@ -5,4 +5,4 @@ COPY . /app
 
 RUN pip install -r requirements.txt
 
-ENTRYPOINT ["python", "queuemon.py"]
+ENTRYPOINT ["python", "fsqueuemon/queuemon.py"]
