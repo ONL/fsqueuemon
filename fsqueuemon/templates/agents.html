@@ -1,8 +1,8 @@
-<h3>{{ gettext(u'Agenten') }}</h3>
+<h3>{{ gettext('Agenten') }}</h3>
 <h4>
-	<small>angemeldet</small>
+	<small>{{ gettext('angemeldet') }}</small>
 	<span class="badge {% if agent_stats.available > 0 %}badge-success{% else %}badge-important{% endif %}">{{ agent_stats.available }}</span>
-	<small>frei</small>
+	<small>{{ gettext('frei') }}</small>
 	<span class="badge {% if agent_stats.free > 0 %}badge-success{% else %}badge-important{% endif %}">{{ agent_stats.free }}</span>
 </h4>
 
@@ -10,11 +10,11 @@
 <table class="table table-striped table-condensed">
 	<thead>
 		<tr>
-			<th width="30%">{{ gettext(u'Agent') }}</th>
-			<th width="30%">{{ gettext(u'Queues') }}/{{ gettext(u'Level') }}</th>
-			<th width="15%">{{ gettext(u'Status') }}</th>
-			<th width="10%">{{ gettext(u'Anrufe') }}</th>
-			<th width="15%">{{ gettext(u'Letzter Anruf') }}</th>
+			<th width="30%">{{ gettext('Agent') }}</th>
+			<th width="30%">{{ gettext('Queues') }}/{{ gettext('Level') }}</th>
+			<th width="15%">{{ gettext('Status') }}</th>
+			<th width="10%">{{ gettext('Anrufe') }}</th>
+			<th width="15%">{{ gettext('Letzter Anruf') }}</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -32,24 +32,24 @@
 			<td>
 				{% if agent.callstate %}
 					{% if agent.direction == 'caller' %}
-				<span class="label label-important">{{ gettext(u'telefoniert') }} &#8614;</span>
+				<span class="label label-important">{{ gettext('telefoniert') }} &#8614;</span>
 					{% else %}
 						{% if agent.callstate == 'RINGING' %}
-				<span class="label label-warning">{{ gettext(u'klingelt') }} &#8612;</span>
+				<span class="label label-warning">{{ gettext('klingelt') }} &#8612;</span>
 						{% else %}
-				<span class="label label-important">{{ gettext(u'telefoniert') }} &#8612;</span>
+				<span class="label label-important">{{ gettext('telefoniert') }} &#8612;</span>
 						{% endif %}
 					{% endif %}
 				{% elif agent.status == 'Logged Out' %}
-				<span class="label">{{ gettext(u'abgemeldet') }}</span>
+				<span class="label">{{ gettext('abgemeldet') }}</span>
 				{% elif agent.status == 'On Break' or agent.state == 'Idle' %}
-				<span class="label label-info">{{ gettext(u'pausiert') }}</span>
+				<span class="label label-info">{{ gettext('pausiert') }}</span>
 				{% elif agent.state == 'Receiving' %}
-				<span class="label label-warning">{{ gettext(u'klingelt') }} &#8612;</span>
+				<span class="label label-warning">{{ gettext('klingelt') }} &#8612;</span>
 				{% elif agent.state == 'In a queue call' %}
-				<span class="label label-important">{{ gettext(u'telefoniert') }} &#8612;</span>
+				<span class="label label-important">{{ gettext('telefoniert') }} &#8612;</span>
 				{% else %}
-				<span class="label label-success">{{ gettext(u'frei') }}</span>
+				<span class="label label-success">{{ gettext('frei') }}</span>
 				{% endif %}
 			</td>
 			<td>{{ agent.calls_answered|int|default('-', true) }}</th>
@@ -68,5 +68,5 @@
 </table>
 {% else %}
 <br/>
-<div class="alert">Es sind keine Agenten registriert!</div>
+<div class="alert">{{ gettext('Es sind keine Agenten registriert!') }}</div>
 {% endif %}

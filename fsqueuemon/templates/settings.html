@@ -1,37 +1,37 @@
 <p>
-	<button id="showsettings" class="btn btn-small"><i class="icon-cog"></i> {{ gettext(u'Einstellungen') }}</button>
+	<button id="showsettings" class="btn btn-small"><i class="icon-cog"></i> {{ gettext('Einstellungen') }}</button>
 </p>
 <form id="settingsform" method="POST" action="{{ url_for('settings') }}" class="well form-horizontal">
 	<input type="hidden" name="view" value="{{ request.script_root }}{{ request.path }}">
 	<fieldset>
 		<div class="control-group">
-			<label class="control-label" for="input_refresh">{{ gettext(u'automatisch neu laden') }}</label>
+			<label class="control-label" for="input_refresh">{{ gettext('automatisch neu laden') }}</label>
 			<div class="controls">
 				<div class="input-append">
-					<input type="text" name="refresh" value="{% if request.args.refresh and request.args.refresh|int > 0 %}{{ request.args.refresh|int }}{% endif %}" id="input_refresh" class="span3"><span class="add-on">{{ gettext(u'Sekunden') }}</span>
+					<input type="text" name="refresh" value="{% if request.args.refresh and request.args.refresh|int > 0 %}{{ request.args.refresh|int }}{% endif %}" id="input_refresh" class="span3"><span class="add-on">{{ gettext('Sekunden') }}</span>
 				</div>
 			</div>
 		</div>
 		<div class="control-group">
-			<label class="control-label" for="checkbox_showoffline">{{ gettext(u'abgemeldete Agenten') }}</label>
+			<label class="control-label" for="checkbox_showoffline">{{ gettext('abgemeldete Agenten') }}</label>
 			<div class="controls">
-				<label class="checkbox"><input type="checkbox" name="showoffline" id="checkbox_showoffline" value="1"{% if not request.args.showoffline or request.args.showoffline != '0' %} checked{% endif %}> {{ gettext(u'anzeigen') }}</label>
+				<label class="checkbox"><input type="checkbox" name="showoffline" id="checkbox_showoffline" value="1"{% if not request.args.showoffline or request.args.showoffline != '0' %} checked{% endif %}> {{ gettext('anzeigen') }}</label>
 			</div>
 		</div>
 		<div class="control-group">
-			<label class="control-label" for="checkbox_showlinks">{{ gettext(u'Links') }}</label>
+			<label class="control-label" for="checkbox_showlinks">{{ gettext('Links') }}</label>
 			<div class="controls">
-				<label class="checkbox"><input type="checkbox" name="showlinks" id="checkbox_showlinks" value="1"{% if not request.args.showlinks or request.args.showlinks != '0' %} checked{% endif %}> {{ gettext(u'anzeigen') }}</label>
+				<label class="checkbox"><input type="checkbox" name="showlinks" id="checkbox_showlinks" value="1"{% if not request.args.showlinks or request.args.showlinks != '0' %} checked{% endif %}> {{ gettext('anzeigen') }}</label>
 			</div>
 		</div>
 		<div class="control-group">
-			<label class="control-label" for="checkbox_showclock">{{ gettext(u'Uhrzeit') }}</label>
+			<label class="control-label" for="checkbox_showclock">{{ gettext('Uhrzeit') }}</label>
 			<div class="controls">
-				<label class="checkbox"><input type="checkbox" name="showclock" id="checkbox_showclock" value="1"{% if request.args.showclock and request.args.showclock != '0' %} checked{% endif %}> {{ gettext(u'anzeigen') }}</label>
+				<label class="checkbox"><input type="checkbox" name="showclock" id="checkbox_showclock" value="1"{% if request.args.showclock and request.args.showclock != '0' %} checked{% endif %}> {{ gettext('anzeigen') }}</label>
 			</div>
 		</div>
 		<div class="form-actions">
-			<button type="submit" class="btn btn-primary">{{ gettext(u'übernehmen') }}</button>
+			<button type="submit" class="btn btn-primary">{{ gettext('übernehmen') }}</button>
 		</div>
 	</fieldset>
 </form>

@@ -1,0 +1,163 @@
+# German translations for PROJECT.
+# Copyright (C) 2019 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2019-11-08 23:01+0100\n"
+"PO-Revision-Date: 2019-11-08 23:02+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: queuemon.py:49
+msgid "vor "
+msgstr ""
+
+#: queuemon.py:53
+#, python-format
+msgid "%(num)s Min."
+msgstr ""
+
+#: queuemon.py:55
+#, python-format
+msgid "%(num).1f Stunde"
+msgid_plural "%(num).1f Stunden"
+msgstr[0] ""
+msgstr[1] ""
+
+#: queuemon.py:66
+#, python-format
+msgid "%(num).1f Minute"
+msgid_plural "%(num).1f Minuten"
+msgstr[0] ""
+msgstr[1] ""
+
+#: queuemon.py:67
+#, python-format
+msgid "%(num).1f Sekunde"
+msgid_plural "%(num).1f Sekunden"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/agents.html:1
+msgid "Agenten"
+msgstr ""
+
+#: templates/agents.html:3
+msgid "angemeldet"
+msgstr ""
+
+#: templates/agents.html:5 templates/agents.html:52
+msgid "frei"
+msgstr ""
+
+#: templates/agents.html:13
+msgid "Agent"
+msgstr ""
+
+#: templates/agents.html:14
+msgid "Queues"
+msgstr ""
+
+#: templates/agents.html:14
+msgid "Level"
+msgstr ""
+
+#: templates/agents.html:15 templates/queues.html:19
+msgid "Status"
+msgstr ""
+
+#: templates/agents.html:16
+msgid "Anrufe"
+msgstr ""
+
+#: templates/agents.html:17
+msgid "Letzter Anruf"
+msgstr ""
+
+#: templates/agents.html:35 templates/agents.html:40 templates/agents.html:50
+msgid "telefoniert"
+msgstr ""
+
+#: templates/agents.html:38 templates/agents.html:48
+msgid "klingelt"
+msgstr ""
+
+#: templates/agents.html:44
+msgid "abgemeldet"
+msgstr ""
+
+#: templates/agents.html:46
+msgid "pausiert"
+msgstr ""
+
+#: templates/agents.html:71
+msgid "Es sind keine Agenten registriert!"
+msgstr ""
+
+#: templates/queues.html:9
+msgid "wartend"
+msgstr ""
+
+#: templates/queues.html:18
+msgid "Position"
+msgstr ""
+
+#: templates/queues.html:20
+msgid "Name"
+msgstr ""
+
+#: templates/queues.html:21
+msgid "Caller ID"
+msgstr ""
+
+#: templates/queues.html:22
+msgid "seit"
+msgstr ""
+
+#: templates/settings.html:2
+msgid "Einstellungen"
+msgstr ""
+
+#: templates/settings.html:8
+msgid "automatisch neu laden"
+msgstr ""
+
+#: templates/settings.html:11
+msgid "Sekunden"
+msgstr ""
+
+#: templates/settings.html:16
+msgid "abgemeldete Agenten"
+msgstr ""
+
+#: templates/settings.html:18 templates/settings.html:24
+#: templates/settings.html:30
+msgid "anzeigen"
+msgstr ""
+
+#: templates/settings.html:22
+msgid "Links"
+msgstr ""
+
+#: templates/settings.html:28
+msgid "Uhrzeit"
+msgstr ""
+
+#: templates/settings.html:34
+msgid "übernehmen"
+msgstr ""
+
+#: templates/status.html:26
+msgid "Seite konnte nicht geladen werden"
+msgstr ""
+
