@@ -20,144 +20,144 @@ msgstr ""
 
 #: queuemon.py:49
 msgid "vor "
-msgstr ""
+msgstr "since "
 
 #: queuemon.py:53
 #, python-format
 msgid "%(num)s Min."
-msgstr ""
+msgstr "%(num)s min."
 
 #: queuemon.py:55
 #, python-format
 msgid "%(num).1f Stunde"
 msgid_plural "%(num).1f Stunden"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(num).1f hour"
+msgstr[1] "%(num).1f hours"
 
 #: queuemon.py:66
 #, python-format
 msgid "%(num).1f Minute"
 msgid_plural "%(num).1f Minuten"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(num).1f minute"
+msgstr[1] "%(num).1f minutes"
 
 #: queuemon.py:67
 #, python-format
 msgid "%(num).1f Sekunde"
 msgid_plural "%(num).1f Sekunden"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(num).1f second"
+msgstr[1] "%(num).1f seconds"
 
 #: templates/agents.html:1
 msgid "Agenten"
-msgstr ""
+msgstr "Agents"
 
 #: templates/agents.html:3
 msgid "angemeldet"
-msgstr ""
+msgstr "online"
 
 #: templates/agents.html:5 templates/agents.html:52
 msgid "frei"
-msgstr ""
+msgstr "available"
 
 #: templates/agents.html:13
 msgid "Agent"
-msgstr ""
+msgstr "Agent"
 
 #: templates/agents.html:14
 msgid "Queues"
-msgstr ""
+msgstr "Queues"
 
 #: templates/agents.html:14
 msgid "Level"
-msgstr ""
+msgstr "Level"
 
 #: templates/agents.html:15 templates/queues.html:19
 msgid "Status"
-msgstr ""
+msgstr "Status"
 
 #: templates/agents.html:16
 msgid "Anrufe"
-msgstr ""
+msgstr "Calls"
 
 #: templates/agents.html:17
 msgid "Letzter Anruf"
-msgstr ""
+msgstr "Last call"
 
 #: templates/agents.html:35 templates/agents.html:40 templates/agents.html:50
 msgid "telefoniert"
-msgstr ""
+msgstr "speaking"
 
 #: templates/agents.html:38 templates/agents.html:48
 msgid "klingelt"
-msgstr ""
+msgstr "ringing"
 
 #: templates/agents.html:44
 msgid "abgemeldet"
-msgstr ""
+msgstr "offline"
 
 #: templates/agents.html:46
 msgid "pausiert"
-msgstr ""
+msgstr "pausing"
 
 #: templates/agents.html:71
 msgid "Es sind keine Agenten registriert!"
-msgstr ""
+msgstr "No agents registered"
 
 #: templates/queues.html:9
 msgid "wartend"
-msgstr ""
+msgstr "waiting"
 
 #: templates/queues.html:18
 msgid "Position"
-msgstr ""
+msgstr "Position"
 
 #: templates/queues.html:20
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 #: templates/queues.html:21
 msgid "Caller ID"
-msgstr ""
+msgstr "Caller ID"
 
 #: templates/queues.html:22
 msgid "seit"
-msgstr ""
+msgstr "since"
 
 #: templates/settings.html:2
 msgid "Einstellungen"
-msgstr ""
+msgstr "Settings"
 
 #: templates/settings.html:8
 msgid "automatisch neu laden"
-msgstr ""
+msgstr "auto reload"
 
 #: templates/settings.html:11
 msgid "Sekunden"
-msgstr ""
+msgstr "Seconds"
 
 #: templates/settings.html:16
 msgid "abgemeldete Agenten"
-msgstr ""
+msgstr "offline agents"
 
 #: templates/settings.html:18 templates/settings.html:24
 #: templates/settings.html:30
 msgid "anzeigen"
-msgstr ""
+msgstr "view"
 
 #: templates/settings.html:22
 msgid "Links"
-msgstr ""
+msgstr "Links"
 
 #: templates/settings.html:28
 msgid "Uhrzeit"
-msgstr ""
+msgstr "Time"
 
 #: templates/settings.html:34
 msgid "übernehmen"
-msgstr ""
+msgstr "apply"
 
 #: templates/status.html:26
 msgid "Seite konnte nicht geladen werden"
-msgstr ""
+msgstr "Could not load site"
 
