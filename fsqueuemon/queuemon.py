@@ -46,13 +46,12 @@ def filter_timestamp_format(timestamp):
     ts = datetime.fromtimestamp(int(timestamp))
     delta = datetime.now() - ts
     if delta.days < 1:
-        ts = gettext("vor ")
         hours = delta.seconds / 3600.
         if hours < 1:
             minutes = delta.seconds % 3600 / 60
-            ts += gettext(u'%(num)s Min.', num=minutes)
+            ts = gettext(u'vor %(num)s Min.', num=minutes)
         else:
-            ts += ngettext(u'%(num).1f Stunde', u'%(num).1f Stunden', num=hours)
+            ts = ngettext(u'vor %(num).1f Stunde', u'vor %(num).1f Stunden', num=hours)
     return ts
 
 @app.template_filter('deltaformat')
