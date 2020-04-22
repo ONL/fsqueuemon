@@ -16,7 +16,7 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 
-from xmlrpclib import ServerProxy
+from xmlrpc.client import ServerProxy
 from xml.etree.cElementTree import XML
 
 import datetime
