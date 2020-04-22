@@ -20,7 +20,7 @@ msgstr ""
 
 #: queuemon.py:49
 msgid "vor "
-msgstr "since "
+msgstr "ago "
 
 #: queuemon.py:53
 #, python-format
