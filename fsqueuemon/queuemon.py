@@ -18,6 +18,8 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 URI = 'http://freeswitch:works@127.0.0.1:8080'
+BABEL_DEFAULT_LOCALE = 'de'
+BABEL_DEFAULT_TIMEZONE = 'Europe/Berlin'
 
 from flask import Flask, request, render_template, abort, redirect, jsonify
 from pprint import pformat
