@@ -23,7 +23,7 @@ BABEL_DEFAULT_TIMEZONE = 'Europe/Berlin'
 
 from flask import Flask, request, render_template, abort, redirect, jsonify
 from pprint import pformat
-from urllib3 import urlencode
+from urllib.parse import urlencode
 from time import strftime
 from datetime import datetime
 import time
